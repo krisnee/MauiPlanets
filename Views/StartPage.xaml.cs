@@ -7,11 +7,6 @@ public partial class StartPage : ContentPage
         InitializeComponent();
     }
 
-    private void InitializeComponent()
-    {
-        throw new NotImplementedException();
-    }
-
     protected override async void OnAppearing()
     {
         base.OnAppearing();
@@ -21,9 +16,11 @@ public partial class StartPage : ContentPage
             return;
         }
 
+        await Task.Delay(1000); // Oodake 1 sekund
+
         var parentAnimation = new Animation();
 
-        //Planets Animation
+        //PlanetAnimation
         parentAnimation.Add(0, 0.2, new Animation(v => imgMercury.Opacity = v, 0, 1, Easing.CubicIn));
         parentAnimation.Add(0.1, 0.3, new Animation(v => imgVenus.Opacity = v, 0, 1, Easing.CubicIn));
         parentAnimation.Add(0.2, 0.4, new Animation(v => imgEarth.Opacity = v, 0, 1, Easing.CubicIn));
@@ -33,12 +30,19 @@ public partial class StartPage : ContentPage
         parentAnimation.Add(0.6, 0.8, new Animation(v => imgUranus.Opacity = v, 0, 1, Easing.CubicIn));
         parentAnimation.Add(0.7, 0.9, new Animation(v => imgNeptune.Opacity = v, 0, 1, Easing.CubicIn));
 
-        //Intro box
-        parentAnimation.Add(0.8, 1, new Animation(v => imgIntro.Opacity = v, 0, 1, Easing.CubicIn));
+        //Intro Box
+        parentAnimation.Add(0.7, 1, new Animation(v => imgIntro.Opacity = v, 0, 1, Easing.CubicIn));
 
         parentAnimation.Commit(this, "TransitionAnimation", 16, 3000, null, null);
     }
 
-//    async void ExploreNow_Clicked(System.Object sender, System.EventArgs e)
-  //      => Application.Current.MainPage = new NavigationPage(new PlanetsPage());
+    async void ExploreNow_Clicked(System.Object sender, System.EventArgs e)
+    {
+        await Task.Delay(500); // Oodake 0.5 sekundit
+
+        if (Application.Current?.MainPage != null)
+        {
+            Application.Current.MainPage = new NavigationPage(new PlanetsPage());
+        }
+    }
 }
