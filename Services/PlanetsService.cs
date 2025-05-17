@@ -1,4 +1,6 @@
-using MauiPlanets.Models;
+using System;
+using System.Collections.Generic;
+using Microsoft.Maui.Graphics;
 
 
 namespace MauiPlanets.Services
@@ -148,6 +150,102 @@ namespace MauiPlanets.Services
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOE0lFUuYQKRPDF5Jnpw40XpyuOUpKfLLXBA&s",
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKYtK1rw-bMdomPmONkGk3cREGm79I_nSPJg&s",
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1hyWzldCX3g_BWDTb-chlv-2elXM90qbZcw&s"
+                }
+            },
+            new()
+            {
+                Name = "Pluto",
+                Subtitle = "Once known as the ninth planet, now classified as a dwarf planet",
+                HeroImage = "pluto.png",
+                Description = "Discovered in 1930, Pluto was long considered our solar system's ninth planet until its " +
+                "reclassification in 2006. With a diameter of about 2,377 kilometers, this icy world orbits the Sun at an average " +
+                "distance of 5.9 billion kilometers, taking 248 Earth years to complete one orbit. Despite its small size, " +
+                "Pluto has five known moons, with Charon being the largest.",
+                AccentColorStart = Color.FromArgb("#ae7e60"),
+                AccentColorEnd = Color.FromArgb("#bdab9f"),
+                Images = new()
+                {
+                    "https://solarsystem.nasa.gov/system/resources/detail_files/933_BIG_P_COLOR_2_TRUE_COLOR1_1980.jpg",
+                    "https://www.nasa.gov/wp-content/uploads/2021/06/pia19952-pluto-earth-comparison-2015_0709.webp",
+                    "https://science.nasa.gov/wp-content/uploads/2023/01/15pluto_crop_for_blog_4x3.jpg"
+                }
+            },
+            new()
+            {
+                Name = "Ceres",
+                Subtitle = "The largest object in the asteroid belt",
+                HeroImage = "ceres.png",
+                Description = "Located in the asteroid belt between Mars and Jupiter, Ceres was the first asteroid ever " +
+                "discovered in 1801. With a diameter of approximately 940 kilometers, it comprises about one-third of the " +
+                "asteroid belt's total mass. In 2015, NASA's Dawn spacecraft revealed Ceres has a rocky interior, an ice-rich " +
+                "crust, and possibly a subsurface ocean of briny water. Its surface features numerous craters and mysterious " +
+                "bright spots composed of salt deposits.",
+                AccentColorStart = Color.FromArgb("#686462"),
+                AccentColorEnd = Color.FromArgb("#b8b5b3"),
+                Images = new()
+                {
+                    "https://science.nasa.gov/wp-content/uploads/2023/05/PIA22660_ceres.jpg",
+                    "https://imgs.search.brave.com/YU9d6KgaVv2-9JJSfKDvzOo6IIxdG1ZFJCQsfR6xFgI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tc3Rl/Y2hkcC5jZG4uc2hv/cGlmeS5jb20vcy9m/aWxlcy8xLzA1ODUv/MzM1NS9wcm9kdWN0/cy9hY2NvcmRpb24t/aXRlbS00LTUuanBn/P3Y9MTcwOTcyODUx/MQ",
+                    "https://photojournal.jpl.nasa.gov/jpegMod/PIA22478_modest.jpg"
+                }
+            },
+            new()
+            {
+                Name = "Haumea",
+                Subtitle = "The rapid spinner with an unusual elongated shape",
+                HeroImage = "haumea.png",
+                Description = "Discovered in 2004, Haumea is one of the strangest dwarf planets in our solar system. " +
+                "Its elongated, egg-like shape results from its incredibly rapid rotation, completing one full turn in " +
+                "just under 4 hours. Located in the Kuiper Belt beyond Neptune, Haumea has a diameter equivalent to about " +
+                "one-third that of Earth's moon. It features a surface composed largely of crystalline water ice and has " +
+                "two known moons, Hi'iaka and Namaka. Uniquely, Haumea is also surrounded by a ring system discovered in 2017.",
+                AccentColorStart = Color.FromArgb("#757270"),
+                AccentColorEnd = Color.FromArgb("#8b8680"),
+                Images = new()
+                {
+                    "https://imgs.search.brave.com/IQq-XEv57-dHvGF3mK2vtJtFn_pLvg-c3Tl4KFX77eo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9iL2JiL0hh/dW1lYV9yZW5kZXJp/bmcuanBnLzIyMHB4/LUhhdW1lYV9yZW5k/ZXJpbmcuanBn",
+                    "https://imgs.search.brave.com/EW69O_iYvd0yq6A_JRwKixk8E64GXqP4bnDNRh0A6Tk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaW1tZWRpYXRl/Lm9yZy9zaXRlcy9h/bXRob3JpdHkvZmls/ZXMvY29udGVudC8y/Ni8yMDIyL2RlZmF1/bHQvZmlsZXMvdGh1/bWJzL2FydGljbGVz/L2hhdW1lYS5qcGVn/L2hhdW1lYS5qcGVn",
+                    "https://www.thoughtco.com/thmb/wBcnaMkdPtKXMx_gL2j-mFuTWbk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/haumea-dwarf-planet-pluto-4148139-1b5a8478a57f49b5b45a14bed50e0d3c.jpg"
+                }
+            },
+            new()
+            {
+                Name = "MakeMake",
+                Subtitle = "The crimson dwarf of the outer solar system",
+                HeroImage = "makemake.png",
+                Description = "Named after the creation deity of the Rapa Nui people of Easter Island, Makemake was " +
+                "discovered in 2005. This Kuiper Belt object has a reddish hue and a diameter of roughly 1,430 kilometers, " +
+                "making it about two-thirds the size of Pluto. Makemake takes approximately 305 Earth years to orbit the " +
+                "Sun and has one known moon, discovered in 2016. Its surface is thought to be covered with methane, ethane, " +
+                "and possibly nitrogen ices, giving it a reflective appearance that makes it the second brightest Kuiper Belt " +
+                "object after Pluto.",
+                AccentColorStart = Color.FromArgb("#7c4b34"),
+                AccentColorEnd = Color.FromArgb("#9a7567"),
+                Images = new()
+                {
+                    "https://imgs.search.brave.com/b8ER2GgbGFCQcM4zBimUbSYq2WjtDsQdh9EDQIv89Dw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dGhlc3BhY2VhY2Fk/ZW15Lm9yZy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMS8wMi9t/YWtlbWFrZS10aHVt/Ym5haWwuanBn",
+                    "https://imgs.search.brave.com/7mTpw3pYNGsBbsOPZbYhx4e0kd98_NmLxoxRn7j-g2M/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9lc29w/aHlzaWNzLm9yZy9p/bWcvZXNvMTI0Ni1N/YWtlbWFrZS1tb29u/LnBuZw",
+                    "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVVHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bbf69ef3be2e7322681af6c0d5ea8f2f0f9ec3e1/PIA21398.jpg"
+                }
+            },
+            new()
+            {
+                Name = "Eris",
+                Subtitle = "The most massive dwarf planet that changed astronomy",
+                HeroImage = "eris.png",
+                Description = "Discovered in 2005, Eris caused a scientific revolution that led to the redefinition of " +
+                "what constitutes a planet. Despite being slightly smaller in diameter than Pluto at about 2,326 kilometers, " +
+                "Eris is approximately 27% more massive, making it the most massive known dwarf planet. Orbiting the Sun at an " +
+                "average distance of 96 astronomical units (14.4 billion kilometers), Eris takes about 558 Earth years to " +
+                "complete one orbit. Its highly reflective surface is covered with methane ice, and it has one known moon " +
+                "named Dysnomia.",
+                AccentColorStart = Color.FromArgb("#9d4a40"),
+                AccentColorEnd = Color.FromArgb("#996237"),
+                Images = new()
+                {
+                    "https://www.go-astronomy.com/images/planets/eris-planet.jpg",
+                    "https://solarsystem.nasa.gov/system/stellar_items/image_files/726_feature_1600x900_eris.jpg",
+                    "https://science.nasa.gov/wp-content/uploads/2023/05/eris-dysnomia_composite.jpg"
                 }
             }
         };
