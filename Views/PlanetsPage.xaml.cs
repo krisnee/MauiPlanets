@@ -16,6 +16,7 @@ public partial class PlanetsPage : ContentPage
     {
         base.OnAppearing();
 
+        // Veenduge, et need kontrollid on XAML-failis m‰‰ratletud
         lstPopularPlanets.ItemsSource = PlanetsService.GetFeaturedPlanets();
         lstAllPlanets.ItemsSource = PlanetsService.GetAllPlanets();
     }
@@ -29,7 +30,7 @@ public partial class PlanetsPage : ContentPage
         else
         {
             // K‰sitle olukorda, kus valikut ei ole
-            // N‰iteks n‰ita veateadet
+            await DisplayAlert("Viga", "Palun valige planeet.", "OK");
         }
     }
 
@@ -55,5 +56,10 @@ public partial class PlanetsPage : ContentPage
     private void listPopularPlanets_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
         // K‰sitle valiku muutust
+        if (e.CurrentSelection.FirstOrDefault() is Planet selectedPlanet)
+        {
+            // N‰iteks: n‰ita planeedi detaile
+            DisplayAlert("Valitud planeet", selectedPlanet.Name, "OK");
+        }
     }
 }
