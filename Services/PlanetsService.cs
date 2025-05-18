@@ -1,6 +1,4 @@
-using System;
-using System.Collections.Generic;
-using Microsoft.Maui.Graphics;
+using MauiPlanets.Models;
 
 
 namespace MauiPlanets.Services
@@ -32,7 +30,7 @@ namespace MauiPlanets.Services
                 Subtitle = "The pressure cooker",
                 HeroImage = "venus.png",
                 Description = "Of all the planets, Venus is the one most similar to Earth. In fact, " +
-                            "Venus is often called Earth's “sister” planet. As similar as it is in some ways, " +
+                            "Venus is often called Earth's ï¿½sisterï¿½ planet. As similar as it is in some ways, " +
                             "however, it is also very different in others. ",
                 AccentColorStart = Color.FromArgb("#a6393b"),
                 AccentColorEnd = Color.FromArgb("#d17f21"),
@@ -70,7 +68,7 @@ namespace MauiPlanets.Services
                 Description = "No planet has sparked the imaginations of humans as much as Mars. " +
                             "It may be the reddish color of Mars, or the fact that it can often be easily seen " +
                             "in the night sky, that has caused people to wonder about this close neighbor of ours. " +
-                            "Tales of “Martians” invading Earth have been around for well over fifty years. But is " +
+                            "Tales of ï¿½Martiansï¿½ invading Earth have been around for well over fifty years. But is " +
                             "it likely that any kind of life really does exist on Mars? ",
                 AccentColorStart = Color.FromArgb("#a23036"),
                 AccentColorEnd = Color.FromArgb("#eb3333"),
@@ -124,7 +122,7 @@ namespace MauiPlanets.Services
                 Description = "Uranus is the seventh planet from the Sun. It is a gaseous cyan-coloured ice giant. " +
                             "Most of the planet is made of water, ammonia, and methane in a supercritical phase of matter, which " +
                             "astronomy calls 'ice' or volatiles. The planet's atmosphere has a complex layered cloud structure and " +
-                            "has the lowest minimum temperature (49 K (?224 °C; ?371 °F)) of all the Solar System's planets.",
+                            "has the lowest minimum temperature (49 K (?224 ï¿½C; ?371 ï¿½F)) of all the Solar System's planets.",
                 AccentColorStart = Color.FromArgb("#9d4a40"),
                 AccentColorEnd = Color.FromArgb("#996237"),
                 Images = new()
@@ -203,9 +201,10 @@ namespace MauiPlanets.Services
                 AccentColorEnd = Color.FromArgb("#8b8680"),
                 Images = new()
                 {
-                    "https://imgs.search.brave.com/IQq-XEv57-dHvGF3mK2vtJtFn_pLvg-c3Tl4KFX77eo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9iL2JiL0hh/dW1lYV9yZW5kZXJp/bmcuanBnLzIyMHB4/LUhhdW1lYV9yZW5k/ZXJpbmcuanBn",
-                    "https://imgs.search.brave.com/EW69O_iYvd0yq6A_JRwKixk8E64GXqP4bnDNRh0A6Tk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaW1tZWRpYXRl/Lm9yZy9zaXRlcy9h/bXRob3JpdHkvZmls/ZXMvY29udGVudC8y/Ni8yMDIyL2RlZmF1/bHQvZmlsZXMvdGh1/bWJzL2FydGljbGVz/L2hhdW1lYS5qcGVn/L2hhdW1lYS5qcGVn",
-                    "https://www.thoughtco.com/thmb/wBcnaMkdPtKXMx_gL2j-mFuTWbk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/haumea-dwarf-planet-pluto-4148139-1b5a8478a57f49b5b45a14bed50e0d3c.jpg"
+                    "https://www.centraldatacore.com/wp-content/uploads/PD3-Haumea-P-Key-1200x900.jpg",
+    // Problemaatiline reddit URL on asendatud
+    "https://i.redd.it/9fswe344cff51.jpg", // Otsene link reddit pildile
+    "https://www.universetoday.com/wp-content/uploads/2022/10/7871.jpg"
                 }
             },
             new()
@@ -223,9 +222,9 @@ namespace MauiPlanets.Services
                 AccentColorEnd = Color.FromArgb("#9a7567"),
                 Images = new()
                 {
-                    "https://imgs.search.brave.com/b8ER2GgbGFCQcM4zBimUbSYq2WjtDsQdh9EDQIv89Dw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dGhlc3BhY2VhY2Fk/ZW15Lm9yZy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMS8wMi9t/YWtlbWFrZS10aHVt/Ym5haWwuanBn",
-                    "https://imgs.search.brave.com/7mTpw3pYNGsBbsOPZbYhx4e0kd98_NmLxoxRn7j-g2M/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9lc29w/aHlzaWNzLm9yZy9p/bWcvZXNvMTI0Ni1N/YWtlbWFrZS1tb29u/LnBuZw",
-                    "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVVHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bbf69ef3be2e7322681af6c0d5ea8f2f0f9ec3e1/PIA21398.jpg"
+                     "https://cdn.eso.org/images/screen/eso1246a.jpg",
+                    "https://www.universetoday.com/wp-content/uploads/2008/07/Makemake.jpg",
+                    "https://cdn.mos.cms.futurecdn.net/8QBGiy9BhmttKdGeAAZpn8.jpg"
                 }
             },
             new()
@@ -243,9 +242,9 @@ namespace MauiPlanets.Services
                 AccentColorEnd = Color.FromArgb("#996237"),
                 Images = new()
                 {
-                    "https://www.go-astronomy.com/images/planets/eris-planet.jpg",
-                    "https://solarsystem.nasa.gov/system/stellar_items/image_files/726_feature_1600x900_eris.jpg",
-                    "https://science.nasa.gov/wp-content/uploads/2023/05/eris-dysnomia_composite.jpg"
+                   "https://cff2.earth.com/uploads/2024/02/20135637/Eris_icy-dwarf-planet_kuiper-belt_1m.jpg",
+                   "https://static.wikia.nocookie.net/terragenesis/images/8/88/Habitable_Eris.jpg/revision/latest?cb=20210202092847",
+                   "https://www.bobthealien.co.uk/bobpics/eris_ai.jpg"
                 }
             }
         };
