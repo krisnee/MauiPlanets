@@ -2,13 +2,13 @@ namespace MauiPlanets.Models
 {
     public class Planet
     {
-        public string Name { get; set; }
-        public string Subtitle { get; set; }
-        public string HeroImage { get; set; }
-        public string Description { get; set; }
-        public Color AccentColorStart { get; set; }
-        public Color AccentColorEnd { get; set; }
-        public List<string> Images { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Subtitle { get; set; } = string.Empty;
+        public string HeroImage { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public Color AccentColorStart { get; set; } = Colors.Transparent;
+        public Color AccentColorEnd { get; set; } = Colors.Transparent;
+        public List<string> Images { get; set; } = new List<string>();
 
         public Brush Background
         {
